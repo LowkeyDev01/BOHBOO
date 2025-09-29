@@ -46,6 +46,9 @@
 .right-nav a:hover{
     color: rgba(255, 166, 0, 0.653);
 }
+.right-nav #menu{
+    display: none;
+}
 #last{
     margin-right: 30px;
     color: white;
@@ -94,7 +97,7 @@
     background-color: green;
     border-radius: 15px;
     color: white;
-    padding: 10px 24px;
+    padding: 9px 20px;
 }
 .links #yes:hover{
     color: black;
@@ -210,4 +213,46 @@
 }
 .list img{
     cursor: pointer;
+}
+@media(max-width: 768px){
+    .nav{
+        padding: 15px;
+    }
+    .right-nav #menu{
+        display: block;
+        font-size: 25px;
+    }
+    .left-nav p{
+        display: none;
+    }
+    .left-nav img{
+        display: none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 130vh;
+    }
+    .home #name{
+        font-size: 70px;
+    }
+    .left-home #description{
+        font-size: 30px;
+    }
+    .home img{
+        width: 300px;
+        height: 300px;
+    }
+    .ca{
+        padding: 10px;
+        display: flex;
+        gap: 3rem;
+    }
+    .qes{
+        display: none;
+    }
+    .first{
+    display: none;
+}
 }
