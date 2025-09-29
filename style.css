@@ -235,10 +235,14 @@
         height: 130vh;
     }
     .home #name{
-        font-size: 70px;
+        font-size: 50px;
+    }
+    .left-home {
+        display: flex;
+        gap: 30px;
     }
     .left-home #description{
-        font-size: 30px;
+        font-size: 25px;
     }
     .home img{
         width: 300px;
