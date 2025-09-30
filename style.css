@@ -194,12 +194,12 @@
 }
 .steps{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
 }
 #ls{
     padding: 20px;
-    line-height: 3em;
+    line-height: 2em;
     height: auto;
     font-size: 1.2em;
     border-radius: 15px;
@@ -214,8 +214,80 @@
 .list img{
     cursor: pointer;
 }
-@media(max-width: 768px){
+@media(max-width: 376px){
     .nav{
+        padding: 15px;
+    }
+    .right-nav #menu{
+        display: block;
+        font-size: 25px;
+    }
+    .left-nav p{
+        display: none;
+    }
+    .left-nav img{
+        display: none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 130vh;
+    }
+    .home #name{
+        font-size: 50px;
+    }
+    .left-home {
+        display: flex;
+        gap: 30px;
+    }
+    .left-home #description{
+        font-size: 20px;
+    }
+    .home img{
+        width: 300px;
+        height: 300px;
+    }
+    .ca{
+        font-size: 14px;
+        padding: 10px 18px;
+        display: flex;
+        gap: 3rem;
+    }
+    .qes{
+        display: none;
+    }
+    .links{
+        display: flex;
+        gap: 50px;
+    }
+    .links a{
+        font-size: 16px;
+    }
+    .how-to-buy{
+        height: 200vh;
+    }
+    .steps{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+    #ls{
+        line-height: normal;
+        width: 90%;
+        font-size: 17px;
+        margin-left: 5%;
+    }
+    .how-to-buy p{
+        font-size: 40px;
+    }
+    .first{
+    display: none;
+}
+}
+
+@media (min-width: 400px) and (max-width: 768px){
+     .nav{
         padding: 15px;
     }
     .right-nav #menu{
@@ -274,11 +346,11 @@
     #ls{
         line-height: normal;
         width: 90%;
-        font-size: 14px;
+        font-size: 17px;
         margin-left: 5%;
     }
     .how-to-buy p{
-        font-size: 30px;
+        font-size: 45px;
     }
     .first{
     display: none;
