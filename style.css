@@ -265,12 +265,20 @@
         font-size: 16px;
     }
     .how-to-buy{
-        height: 160vh;
+        height: 150vh;
+    }
+    .steps{
+        display: grid;
+        gap: 40px;
     }
     #ls{
         line-height: normal;
         width: 90%;
+        font-size: 14px;
         margin-left: 5%;
+    }
+    .how-to-buy p{
+        font-size: 40px;
     }
     .first{
     display: none;
