@@ -292,6 +292,7 @@
         height: 250vh;
         flex-direction: column;
         display: flex;
+        gap: 30px;
         justify-content: center;
         align-items: center;
     }
@@ -368,6 +369,9 @@
     }
     .how-to-buy{
         height: 250vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     .steps{
         display: grid;
