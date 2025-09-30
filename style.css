@@ -369,13 +369,12 @@
     }
     .how-to-buy{
         height: 250vh;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
     }
     .steps{
         display: grid;
         gap: 40px;
+        align-items: center;
+        justify-content: center;
     }
     #ls{
         line-height: normal;
