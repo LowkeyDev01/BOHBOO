@@ -291,16 +291,13 @@
     }
     .how-to-buy{
         height: 250vh;
-        flex-direction: column;
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
     }
     .steps{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px;
+        align-items: center;
+        justify-content: center;
     }
     #ls{
         line-height: normal;
