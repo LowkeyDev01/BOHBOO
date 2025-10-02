@@ -240,15 +240,6 @@
 .list img{
     cursor: pointer;
 }
-#dark{
-    cursor: pointer;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    border: 1px solid red;
-    padding: 20px;
-    border-radius: 50%;
-}
 @media(max-width: 767px){
     .nav{
         padding: 15px;
