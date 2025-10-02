@@ -51,6 +51,9 @@
 .right-nav #menu{
     display: none;
 }
+.dropdown{
+    display: none;
+}
 #last{
     margin-right: 30px;
     color: white;
@@ -85,7 +88,7 @@
 .links{
     display: flex;
     gap: 100px;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 .links #yeah{
     color: white;
@@ -97,14 +100,15 @@
 }
 .links #yes{
     background-color: green;
-    border-radius: 15px;
+    border-radius: 10px;
     color: white;
-    padding: 9px 20px;
+    padding: 8px 18px;
+    transition: linear 0.1s;
 }
 .links #yes:hover{
     color: black;
     background-color: white;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .ca{
     padding: 20px;
@@ -131,7 +135,6 @@
     position: absolute;
     animation: bounce 3s ease-in-out;
     animation-iteration-count: infinite;
-    
 }
 @keyframes bounce{
     0%{top: 200px;}
@@ -237,7 +240,16 @@
 .list img{
     cursor: pointer;
 }
-@media(max-width: 399px){
+#dark{
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 50%;
+}
+@media(max-width: 767px){
     .nav{
         padding: 15px;
     }
@@ -255,7 +267,6 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
-        height: 130vh;
     }
     .home #name{
         font-size: 50px;
@@ -283,8 +294,8 @@
         display: none;
     }
     .links{
-        display: flex;
-        gap: 50px;
+        display: none;
+        gap: 70px;
     }
     .links a{
         font-size: 16px;
@@ -311,9 +322,40 @@
     .first{
     display: none;
 }
+.dropdown{
+    display: none;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    transition: 0.4s ease-in-out;
 }
-
-@media (min-width: 400px) and (max-width: 1100px){
+#qwew{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#qwew i{
+    font-size: 20px;
+    padding: 6px 10px;
+    font-weight: 100;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drop a{
+    padding: 10px;
+    color: black;
+}
+.drop a:hover{
+    color: orange;
+}
+}
+@media (min-width: 768px) and (max-width: 900px){
      .nav{
         padding: 15px;
     }
@@ -331,7 +373,6 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
-        height: 130vh;
     }
     .home #name{
         font-size: 50px;
@@ -359,14 +400,14 @@
         display: none;
     }
     .links{
-        display: flex;
-        gap: 50px;
+        display: none;
+        gap: 70px;
     }
     .links a{
         font-size: 16px;
     }
     .how-to-buy{
-        height: 170vh;
+        height: 150vh;
     }
     .steps{
         display: grid;
@@ -385,5 +426,37 @@
     }
     .first{
     display: none;
+}
+.dropdown{
+    display: none;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+#qwew{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#qwew i{
+    font-size: 20px;
+    padding: 6px 10px;
+    font-weight: 100;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drop a{
+    padding: 10px;
+    color: black;
+}
+.drop a:hover{
+    color: orange;
 }
 }
